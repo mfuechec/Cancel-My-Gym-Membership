@@ -1,40 +1,9 @@
 import React from 'react';
+import {gymInfo} from '../../gymInfo';
 
 export default function LandingPage() {
 
     let [value, setValue] = React.useState('');
-
-    let info = {
-        'PlanetFitness': {
-            description:
-            <div id='landingGymInformation'>
-                <p>Planet ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Morbi volutpat sapien sapien, vitae fermentum dolor convallis a. Aliquam commodo mauris metus, id dapibus lectus egestas sed.</p>
-                <p>Donec id augue at sapien ultrices iaculis. Donec dictum ultricies dui vel sodales.</p>
-                <p>Nunc euismod vestibulum augue, sed venenatis dui dignissim ut.</p>
-            </div>,
-            buttons: 
-            <div id='buttonContainer'>
-                <button className='landingButton' type='button'>Write a letter!</button>
-                <button className='landingButton' type='button'>Send a fax!</button>
-            </div>
-        }
-        ,
-        'LifeTime': {
-            description:
-            <div id='landingGymInformation'>
-                <p>LifeTime ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Morbi volutpat sapien sapien, vitae fermentum dolor convallis a. Aliquam commodo mauris metus, id dapibus lectus egestas sed.</p>
-                <p>Donec id augue at sapien ultrices iaculis. Donec dictum ultricies dui vel sodales.</p>
-                <p>Nunc euismod vestibulum augue, sed venenatis dui dignissim ut.</p>
-            </div>,
-            buttons: 
-            <div id='buttonContainer'>
-                <button className='landingButton' type='button'>Write a letter!</button>
-                <button className='landingButton' type='button'>Send a fax!</button>
-            </div>
-        }
-    }
 
     function handleChange(e) {
         setValue(e.target.value);
@@ -50,10 +19,10 @@ export default function LandingPage() {
             <select id='landingDropDown' value={value} onChange={handleChange}>
                 <option className='option' selected hidden>Select your gym</option>
                 <option className='option' value='PlanetFitness'>Planet Fitness</option>
-                <option className='option' value='LifeTime'>LifeTime</option>
+                <option className='option' value='LifeTime'>Life Time Fitness</option>
             </select>
-            {info[value]?.description}
-            {info[value]?.buttons}
+            {gymInfo[value]?.description}
+            {gymInfo[value]?.buttons}
         </div>
     )
 }
