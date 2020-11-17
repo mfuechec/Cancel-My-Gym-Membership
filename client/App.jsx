@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from './components/Navbar.jsx';
+import LandingPage from './components/LandingPage.jsx';
 import { Provider } from 'react-redux';
 import { store } from './configure-store';
 import {
@@ -23,16 +24,12 @@ export default function App() {
                 <Two />
             </Route>
             <Route path="/">
-                <One />
+                <LandingPage />
             </Route>
           </Switch>
     </Provider>
       </Router>
   );
-}
-
-function One() {
-  return <h2>One</h2>;
 }
 
 function Two() {
