@@ -3,7 +3,7 @@ import Introduction from './Introduction.jsx';
 import Drop from './Drop.jsx';
 import Description from './Description.jsx'; 
 import Buttons from './Buttons.jsx'; 
-import {gymInfo} from '../../../gymInfo';
+import {gymInfo} from '../../../assets/gymInfo';
 
 export default function LandingPage() {
 
