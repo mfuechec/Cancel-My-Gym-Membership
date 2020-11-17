@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from './components/Navbar.jsx';
-import LandingPage from './components/LandingPage.jsx';
+import LandingPage from './components/LandingPage/LandingPage.jsx';
 import { Provider } from 'react-redux';
 import { store } from './configure-store';
 import {
