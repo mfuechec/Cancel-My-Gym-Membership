@@ -1,7 +1,7 @@
-# Basic React App
+# Cancel My Gym Membership
 --- 
-Basic React App is a boilerplate that allows users to get started building React applications without the long slog of building out a basic file structure, configuring webpack or dealing with trifling syntax errors.
-The repository is easily installed and provides a basic component structure and server that will have you saying Hello World on localhost:4001 in minutes.
+Cancel My Gym Membership is a website where users are able to input their gym membership information, send that data to my email box and send payment. From there, I send a letter cancelling their gym membership.
+
 # Get started
 
 From terminal in the root directory:
